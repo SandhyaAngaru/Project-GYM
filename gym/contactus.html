@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Labrada:wght@600&family=Shantell+Sans:ital,wght@0,500;1,400&family=Tilt+Prism&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            :root {
+                --primary-text-color:black;
+                --secondary-text-color:rgb(58, 3, 3);
+                --accent-color:rgb(70, 240, 70);
+                --accent-color-dark:violet;
+                --padding-inline-section:20px ;
+            }
+            h1{
+                font-size: 2.5rem;
+                text-align: center;
+                /* padding: 10px; */
+                color: rgb(254, 254, 255);
+                font-family: 'Times New Roman', Times, serif;
+                margin-top: 30px;
+            }
+            h2{
+                font-size: 2rem;
+                text-align: center;
+                font-family: 'Labrada', serif;
+    
+            }
+            h3{
+                font-size: 1.5rem;
+                text-align: center;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            p{
+                font-size: 1rem;
+                text-align: center;
+                font-family: 'Golos Text', sans-serif;
+                padding: 5px;
+               
+            }
+            .flex{
+            display: flex;
+            justify-content: center;
+            }
+            .container{
+                max-width: 100%;
+                margin-inline: auto;
+                padding-inline: var(--padding-inline-section);
+            }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 30px;
+          
+        }
+        .small-bold-text{
+            font-size: 1.25rem;
+            text-align: center;
+            font-weight: 700;
+        }
+        .top-banner-section{
+           text-align: center;
+           background-color: black;
+           color: white;
+        }
+        ul{
+            list-style: none;
+        }
+        .main-nav{
+            display: flex;
+           background-color: rgb(8, 8, 8);
+           height: 90px;
+           width: 1339px;
+           justify-content: space-evenly;
+           margin-top: 10px;
+           /* background-image: url(back1.jpg); */
+        
+          margin-left: 10px;
+         }
+         .company-logo img{
+    width: 150px;
+    height: 90px;
+    
+    }
+    .company-logo{
+       padding: 0px;
+    }
+        .nav-list ul{
+            display: flex;
+           gap: 50px; 
+           justify-items: end;
+           margin-top: 25px;
+          }
+          .nav-list{
+            flex-basis: 720px;
+          }
+          .hover-link{
+         color: rgb(252, 249, 249);
+          }
+          .hover-link:hover{
+         color: black;
+         background-color: white;
+     
+          }
+          .hover-like{
+         color: black;
+     }
+     .hover-like{
+        color: rgb(104, 164, 231);
+        background-color: rgb(252, 249, 249);
+     }
+          .hover-click{
+         color: rgb(7, 7, 7);
+          }
+          .hover-click:hover{
+         color: rgb(76, 131, 202);
+         /* background-color: rgb(243, 241, 245); */
+         cursor: pointer;
+    
+          }
+    .primary-button{
+        border: 2px solid rgb(255, 252, 252);
+        border-radius: 10px;
+        box-shadow: rgb(144, 185, 209);
+        padding: 12px;
+        font-weight: 800;
+    }
+    .secondary-button{
+        border: 2px solid rgb(17, 7, 7);
+        border-radius: 10px;
+        box-shadow: rgb(19, 133, 199);
+        padding: 12px;
+        font-weight: 800;
+    }
+    .style-button{
+        border: 2px solid rgb(21, 145, 228);
+        border-radius: 10px;
+        box-shadow: rgb(16, 19, 20);
+        padding: 12px;
+        font-weight: 800;
+        color: var(--accent-color);
+    }
+    .contact-section{
+        background-image: url(contact.jpg);
+        width: auto;
+        height: 400px;
+       background-repeat: no-repeat;
+       background-size: cover;
+       margin-top: -20px;
+    }
+    .sunny{
+        margin-top: 30px;
+        padding: 170px;
+    }
+    .left-footer{
+    height: 700px;
+    width: 500px;
+    /* border: 2px solid white; */
+    margin-top: 30px;
+    margin-left: 50px ;
+/* padding: 30px; */
+/* justify-items:left */
+}
+.sub-footer{
+    width: auto;
+    height: 300px;
+    /* border: 2px solid; */
+    margin-top: -20px;
+    background-color: lightpink;
+}
+.sub-header{
+    margin-top: 30px;
+    /* margin-right: 10px; */
+}
+.right-sub{
+justify-content: space-between;
+gap: 130px;
+margin-top: 40px;
+}
+.mini{
+width: auto;
+height: 70px;
+background-color: darkgrey;
+text-align: center;
+
+}
+.box{
+    height: 30px;
+    width: 30px;
+    border: 2px solid white;
+}
+    </style>
+</head>
+<body>
+    <div class="top-banner-section">
+        <div class="container">
+          <h3>Fitness  Over  Everywhere </i></h3>
+        </div>
+     </div>
+      <nav>
+          <div class="main-nav flex">
+             <a href="#" class="company-logo">
+              <img src="logo3.jpg" alt="company-logo">
+             </a>
+             <div class="nav-list">
+             <ul class="flex">
+              <li><a href="index.html" class="hover-link primary-button">Home</a></li>
+              <li><a href="about.html" class="hover-link primary-button">About</a></li>
+              <li><a href="help.html" class="hover-link primary-button">Help</a></li>
+              <li><a href="contactus.html" class="hover-like primary-button">Contact us</a></li>
+              <li><a href="login.html" class="hover-link primary-button">Login</a></li>
+              <li><a href="signin.html" class="hover-link primary-button">Sign-in</a></li>
+             </ul>
+          </div>
+      </div>
+      </nav>
+      <section class="contact-section">
+<div class="contact main">
+<h1 class="sunny">CONTACT US</h1>
+</div>
+      </section>
+      <section class="sub-footer">
+        <div class="sub-header flex">
+           
+        <div class="right-sub flex">
+           
+        <div class="sub-card ">
+            <h2  class="hover-click">Address</h2><br><br>
+           <h4> #11-13-1372,<i class="fa-solid fa-paper-plane"></i></h4> 
+           <h4>Above MEGA MORE,</h4>
+           <h4>Dwaraka Nagar Colony,</h4>
+          <h4> Kothapet,500035,TS</h4>
+           <h4>900000000 <i class="fa-duotone fa-phone"></i></h4>
+           <h4>fitnessgymlh@gmail.com <i class="fa-sharp fa-solid fa-envelope"></i></h4></div>
+            <div class="sub-card ">
+            <h2 class="hover-click">Find Us On</h2><br><br>
+             <img src="map.jpg" alt=""></div>
+             <div class="sub-card ">
+            <h2 class="hover-click"> Timings</h2><br><br>
+           <h4> Monday to Saturday timings:5 am – 9:30 pm</h4>
+             <h4> Sunday timings: 5 – 11:30 am</h4> </div>
+            </div>
+        </div>
+       </section>
+       <section class="mini-footer">
+        <div class="mini">
+            <a href="#" class="hover-click">Terms & Conditions</a>
+            <a href="#" class="hover-click">Privacy</a>
+            <a href="#" class="hover-click">Security</a>
+            <a href="#" class="hover-click">policy</a>
+            <a href="#" class="hover-click">services</a>
+          <i class="fa-brands fa-instagram hover-click"></i>
+          <i class="fa-brands fa-facebook-messenger hover-click"></i>
+            <i class="fa-brands fa-facebook-f hover-click" ></i>
+        </div>
+    </section>
+       <script src="https://kit.fontawesome.com/d5eeef4702.js" crossorigin="anonymous"></script>
+</body>
+</html>
